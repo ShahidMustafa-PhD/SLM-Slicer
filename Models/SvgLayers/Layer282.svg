@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg height="2000" width="2000" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <marker id="endArrow" markerHeight="8" markerUnits="strokeWidth" markerWidth="10" orient="auto" refX="1" refY="5" viewBox="0 0 1000 1000">
+      <polyline fill="darkblue" points="0,0 10,5 0,10 1,5" />
+   </marker>
+   <circle cx="1000" cy="1000" r="1" style="stroke:black; fill: red" />
+   <circle cx="1000" cy="1000" r="800" style="stroke:black; fill: none" />
+   <path d="M 724.755  949.378  726.651  949.583  726.6  950.529  678.463  950.529  678.412  949.583  680.308  949.378  702.531  948.581  724.755  949.378  " style="fill: none; stroke: darkmagenta; stroke-width: 0.200000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 737.538  905.511  737.504  906.476  667.559  906.476  667.525  905.511  690.379  903.902  714.683  903.902  737.538  905.511  " style="fill: none; stroke: darkmagenta; stroke-width: 0.200000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 723.693  949.935  713.112  949.745  702.531  949.556  691.951  949.745  681.37  949.935  " style="fill: none; stroke: grey; stroke-width: 0.200000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 734.386  905.883  727.803  905.651  721.221  905.42  " style="fill: none; stroke: grey; stroke-width: 0.200000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 721.221  905.42  714.638  905.189  690.425  905.189  683.842  905.42  677.259  905.651  " style="fill: none; stroke: grey; stroke-width: 0.200000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 677.259  905.651  670.676  905.883  " style="fill: none; stroke: grey; stroke-width: 0.200000; fill-type: evenodd"  fill-opacity="1.000000" />
+</svg>

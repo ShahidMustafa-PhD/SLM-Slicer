@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Shiny Professional App</string>
+  </property>
+  
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1">
+    
+    <!-- TopBar -->
+    <item>
+     <widget class="QFrame" name="topBar">
+      <property name="styleSheet">
+       <string notr="true">
+        QFrame {
+            background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #2980B9, stop:1 #6DD5FA);
+            min-height: 55px;
+            border-bottom: 2px solid #3498DB;
+        }
+        QPushButton {
+            color: white;
+            background: transparent;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 10px;
+        }
+        QPushButton:hover {
+            color: #FFC300;
+        }
+       </string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayoutTop">
+        <item>
+         <spacer name="horizontalSpacerTop">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnSettings">
+          <property name="text">
+           <string>⚙️ Settings</string>
+          </property>
+         </widget>
+        </item>
+      </layout>
+     </widget>
+    </item>
+
+    <!-- Main Area -->
+    <item>
+     <widget class="QFrame" name="mainContent">
+      <property name="styleSheet">
+       <string notr="true">
+        QFrame {
+            background-color: #ECF0F1;
+        }
+       </string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayoutMain">
+        
+        <!-- Sidebar -->
+        <item>
+         <widget class="QFrame" name="sideBar">
+          <property name="minimumSize">
+           <size>
+            <width>180</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">
+            QFrame {
+                background-color: #34495E;
+                border-radius: 10px;
+                margin: 5px;
+            }
+            QPushButton {
+                color: white;
+                background-color: transparent;
+                border: none;
+                font-size: 14px;
+                padding: 12px 10px;
+                text-align: left;
+                border-radius: 8px;
+                transition: background-color 0.3s ease;
+            }
+            QPushButton:hover {
+                background-color: #3B5998;
+                font-weight: bold;
+            }
+            QPushButton:pressed {
+                background-color: #1ABC9C;
+            }
+           </string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayoutSidebar">
+            <item>
+             <widget class="QPushButton" name="btnHome">
+              <property name="text">
+               <string>🏠  Home</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnLoadModel">
+              <property name="text">
+               <string>📂  Load Model</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnProjects">
+              <property name="text">
+               <string>🗂️  Projects</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnAbout">
+              <property name="text">
+               <string>ℹ️  About</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacerSidebar">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+          </layout>
+         </widget>
+        </item>
+
+        <!-- Central widget (Stack) -->
+        <item>
+         <widget class="QFrame" name="frameCenter">
+          <property name="styleSheet">
+           <string notr="true">
+            QFrame {
+                background: white;
+                border-radius: 10px;
+                margin: 10px;
+                border: 1px solid #dfe6e9;
+            }
+           </string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayoutCenter">
+            <item>
+             <widget class="QStackedWidget" name="stackedWidget"/>
+            </item>
+          </layout>
+         </widget>
+        </item>
+
+      </layout>
+     </widget>
+    </item>
+
+   </layout>
+  </widget>
+
+  <widget class="QStatusBar" name="statusbar">
+   <property name="styleSheet">
+    <string notr="true">
+     QStatusBar {
+         background-color: #dfe6e9;
+         border-top: 1px solid #b2bec3;
+     }
+    </string>
+   </property>
+  </widget>
+ </widget>
+
+ <resources/>
+ <connections/>
+</ui>

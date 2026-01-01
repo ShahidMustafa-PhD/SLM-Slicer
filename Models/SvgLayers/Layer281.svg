@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg height="2000" width="2000" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <marker id="endArrow" markerHeight="8" markerUnits="strokeWidth" markerWidth="10" orient="auto" refX="1" refY="5" viewBox="0 0 1000 1000">
+      <polyline fill="darkblue" points="0,0 10,5 0,10 1,5" />
+   </marker>
+   <circle cx="1000" cy="1000" r="1" style="stroke:black; fill: red" />
+   <circle cx="1000" cy="1000" r="800" style="stroke:black; fill: none" />
+   <line x1="727.014465" y1="951.395752" x2="678.048096" y2="951.395752" style="stroke: green; stroke-width: 0.200000"/>
+   <line x1="727.068237" y1="950.395630" x2="677.994324" y2="950.395630" style="stroke: green; stroke-width: 0.200000"/>
+   <line x1="706.692505" y1="949.395691" x2="698.370117" y2="949.395691" style="stroke: green; stroke-width: 0.200000"/>
+   <line x1="716.773987" y1="908.167114" x2="666.910095" y2="908.167114" style="stroke: green; stroke-width: 0.200000"/>
+   <line x1="716.773987" y1="907.167114" x2="666.839722" y2="907.167114" style="stroke: green; stroke-width: 0.200000"/>
+   <line x1="716.773987" y1="906.167114" x2="667.686707" y2="906.167114" style="stroke: green; stroke-width: 0.200000"/>
+   <line x1="716.773987" y1="905.167175" x2="681.893005" y2="905.167175" style="stroke: green; stroke-width: 0.200000"/>
+   <line x1="738.152405" y1="908.167114" x2="716.873901" y2="908.167114" style="stroke: green; stroke-width: 0.200000"/>
+   <line x1="738.222717" y1="907.167114" x2="716.873901" y2="907.167114" style="stroke: green; stroke-width: 0.200000"/>
+   <line x1="737.375793" y1="906.167114" x2="716.873901" y2="906.167114" style="stroke: green; stroke-width: 0.200000"/>
+   <line x1="723.169556" y1="905.167175" x2="716.873901" y2="905.167175" style="stroke: green; stroke-width: 0.200000"/>
+   <path d="M 724.755  948.543  746.888  950.931  757.431  952.837  757.35  953.748  647.713  953.748  647.631  952.837  658.175  950.931  680.308  948.543  702.531  947.746  724.755  948.543  " style="fill: none; stroke: darkmagenta; stroke-width: 0.200000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 724.683  949.541  745.637  951.802  745.586  952.748  659.477  952.748  659.426  951.802  680.379  949.541  702.531  948.746  724.683  949.541  " style="fill: none; stroke: black; stroke-width: 0.200000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 738.939  904.774  763.052  908.182  765.944  908.799  765.849  909.694  639.214  909.694  639.119  908.799  642.01  908.182  666.123  904.774  690.379  903.066  714.683  903.066  738.939  904.774  " style="fill: none; stroke: darkmagenta; stroke-width: 0.200000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 738.834  905.769  752.952  907.764  752.886  908.694  652.176  908.694  652.111  907.764  666.229  905.769  690.415  904.066  714.648  904.066  738.834  905.769  " style="fill: none; stroke: black; stroke-width: 0.200000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 755.918  953.16  753.466  952.941  751.015  952.721  " style="fill: none; stroke: grey; stroke-width: 0.200000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 751.015  952.721  748.563  952.501  746.112  952.281  " style="fill: none; stroke: grey; stroke-width: 0.200000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 658.951  952.281  656.499  952.501  654.048  952.721  " style="fill: none; stroke: grey; stroke-width: 0.200000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 654.048  952.721  651.596  952.941  649.145  953.16  " style="fill: none; stroke: grey; stroke-width: 0.200000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 743.423  952.157  739.447  951.943  735.472  951.729  " style="fill: none; stroke: grey; stroke-width: 0.200000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 735.472  951.729  731.496  951.515  727.52  951.302  " style="fill: none; stroke: grey; stroke-width: 0.200000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 677.543  951.302  673.567  951.515  669.591  951.729  " style="fill: none; stroke: grey; stroke-width: 0.200000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 669.591  951.729  665.615  951.943  661.64  952.157  " style="fill: none; stroke: grey; stroke-width: 0.200000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 764.585  909.108  762.92  908.932  759.752  908.71  " style="fill: none; stroke: grey; stroke-width: 0.200000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 759.752  908.71  756.585  908.487  753.418  908.264  " style="fill: none; stroke: grey; stroke-width: 0.200000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 651.645  908.264  648.478  908.487  645.31  908.71  " style="fill: none; stroke: grey; stroke-width: 0.200000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 645.31  908.71  642.143  908.932  640.478  909.108  " style="fill: none; stroke: grey; stroke-width: 0.200000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 751.151  908.105  748.043  907.886  744.935  907.668  " style="fill: none; stroke: grey; stroke-width: 0.200000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 744.935  907.668  741.827  907.449  738.719  907.231  " style="fill: none; stroke: grey; stroke-width: 0.200000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 666.343  907.231  663.235  907.449  660.128  907.668  " style="fill: none; stroke: grey; stroke-width: 0.200000; fill-type: evenodd"  fill-opacity="1.000000" />
+   <path d="M 660.128  907.668  657.02  907.886  653.912  908.105  " style="fill: none; stroke: grey; stroke-width: 0.200000; fill-type: evenodd"  fill-opacity="1.000000" />
+</svg>

@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/Layer1.svg</file> 
+    </qresource>
+</RCC>
