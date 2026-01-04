@@ -1,0 +1,23 @@
+﻿cmake_minimum_required(VERSION 3.21)
+project(MyVTKProject)
+
+# Enable C++17 or above
+set(CMAKE_CXX_STANDARD 17)
+
+
+
+# Find VTK from vcpkg
+find_package(VTK REQUIRED)
+
+add_executable(MyVTKProject DMLSV_vtk.cpp)
+
+target_link_libraries(MyVTKProject PRIVATE ${VTK_LIBRARIES})
+
+# Optional: include VTK headers
+target_include_directories(MyVTKProject PRIVATE ${VTK_INCLUDE_DIRS})
+
+# Optional: enable VTK modules (for fine control)
+vtk_module_autoinit(
+  TARGETS MyVTKProject
+  MODULES ${VTK_LIBRARIES}
+)

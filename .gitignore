@@ -12,6 +12,9 @@ install/
 build-debug.bat
 build-debug.ps1
 
+Models/
+
+
 # CMake
 CMakeCache.txt
 CMakeFiles/
