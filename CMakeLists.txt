@@ -31,17 +31,15 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_WIN32_EXECUTABLE TRUE)
 
-<<<<<<< HEAD
-set(Qt6_DIR "C:/Qt/6.10.1/msvc2022_64/lib/cmake/Qt6")
-# Find Qt6
-find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets Svg Xml SvgWidgets Concurrent)
-set(VTK_DIR "C:/vtk_install/lib/cmake/vtk-9.5")
-=======
 set(Qt6_DIR "C:/Qt/6.9.3/msvc2022_64/lib/cmake/Qt6")
 # Find Qt6
 find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets Svg Xml SvgWidgets Concurrent)
 set(VTK_DIR "C:/vtk_install2/lib/cmake/vtk-9.5")
->>>>>>> 455fd16 (Initial commit-architectural changes)
+set(Qt6_DIR "C:/Qt/6.9.3/msvc2022_64/lib/cmake/Qt6")
+# Find Qt6
+find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets Svg Xml SvgWidgets Concurrent)
+set(VTK_DIR "C:/vtk_install2/lib/cmake/vtk-9.5")
+
 # Find VTK with vcpkg
 find_package(VTK REQUIRED COMPONENTS
   CommonCore
