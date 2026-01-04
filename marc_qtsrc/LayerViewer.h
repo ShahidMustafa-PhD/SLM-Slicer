@@ -18,7 +18,7 @@
 #include "SvgLoaderWorker.h"
 #include <QThread>
 #include <QMessageBox>
-
+// layer viewer widget
 class LayerViewer : public QWidget
 {
     Q_OBJECT
