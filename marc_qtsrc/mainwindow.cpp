@@ -1341,8 +1341,8 @@ bool MainWindow::prepareModelsForDLL()
     if (buildConfigFilePath.empty() || !std::filesystem::exists(buildConfigFilePath)) {
         QMetaObject::invokeMethod(this, [this]() {
             QMessageBox::warning(this, "Invalid Config File",
-                                 "Please select a valid build configuration JSON file.");
-        }, Qt::QueuedConnection);
+                "Please select a valid build configuration JSON file.");
+            }, Qt::QueuedConnection);
         return false;
     }
 
@@ -1350,18 +1350,21 @@ bool MainWindow::prepareModelsForDLL()
         if (textEdit) {
             textEdit->append("-File Path Validated!");
         }
-    }, Qt::QueuedConnection);
+        }, Qt::QueuedConnection);
 
     // Get models from STL viewer
     m_internalGuiDataArray.clear();
-    m_internalGuiDataArray = m_stlViewer ? m_stlViewer->getModels() 
-                                         : std::vector<InternalGuiModel>{};
+   // cleanupGuiDataStructures();
+    m_internalGuiDataArray = m_stlViewer ? m_stlViewer->getModels()
+        : std::vector<InternalGuiModel>{};
 
-    // Assign config paths to each model
+    // Assign config paths and initialize model numbers to each model
     if (!m_internalGuiDataArray.empty()) {
-        for (auto &model : m_internalGuiDataArray) {
+        for (size_t i = 0; i < m_internalGuiDataArray.size(); ++i) {
+            auto& model = m_internalGuiDataArray[i];
             model.buildconfig = buildConfigFilePath.string();
             model.stylesconfig = buildStylesFilePath.string();
+            model.model_number = static_cast<int>(i + 1);  // Initialize model_number starting from 1
         }
     }
 
@@ -1494,7 +1497,7 @@ void MainWindow::cleanupGuiDataStructures()
             }
         }, Qt::QueuedConnection);
 
-        delete[] m_guiDataArrayForDll.models;
+        free( m_guiDataArrayForDll.models);
         m_guiDataArrayForDll.models = nullptr;
         m_guiDataArrayForDll.count = 0;
     }

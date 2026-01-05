@@ -4,16 +4,17 @@ build-*/
 out/
 output/
 doc/
-installer/
 install-vs2022/
 bin/
 lib/
 install/
 build-debug.bat
 build-debug.ps1
-
 Models/
-
+build-msvc-debug/
+build-msvc-release/
+install-msvc-debug/
+install-msvc-release/
 
 # CMake
 CMakeCache.txt
