@@ -46,7 +46,14 @@ function(install_qt_plugins)
     cmake_parse_arguments(ARG "${options}" "${oneValueArgs}" "${multiValueArgs}" ${ARGN})
 
     foreach(plugin IN LISTS ARG_PLUGINS)
-        install(DIRECTORY "${ARG_QT_ROOT}/plugins/${plugin}" DESTINATION "${ARG_DESTINATION}")
+        # Check if the plugin directly exists first
+        if(EXISTS "${ARG_QT_ROOT}/plugins/${plugin}")
+            install(DIRECTORY "${ARG_QT_ROOT}/plugins/${plugin}" DESTINATION "${ARG_DESTINATION}")
+        elseif(EXISTS "${ARG_QT_ROOT}/${plugin}") # Sometimes relative to root
+            install(DIRECTORY "${ARG_QT_ROOT}/${plugin}" DESTINATION "${ARG_DESTINATION}")
+        else()
+             message(WARNING "Qt Plugin folder not found: ${plugin} in ${ARG_QT_ROOT}/plugins")
+        endif()
     endforeach()
 endfunction()
 
